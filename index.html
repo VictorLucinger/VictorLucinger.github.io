@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,58 +8,159 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
 
-        <nav>
+<!-- CABEÇALHO E MENU DE NAVEGAÇÃO -->
 
-            <div class="logo">
-            Victor Lucinger
-            </div>
+<header class="header">
+    <a href="#" class="logo">Victor <span>Lucinger</span></a>
 
-            <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Experiência</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
+    <nav class="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#formacao">Formação</a>
+        <a href="#contato">Contato</a>
+    </nav>
 
-        </nav>
+    <div class="header-actions">
+        <a href="assets/curriculo.pdf" class="btn-outline" download>Download CV</a>
+        <a href="https://github.com/VictorLucinger" target="_blank">GitHub</a>
+        <a href="mailto:victorhugoqbl@gmail.com">Email</a>
+    </div>
+</header>
 
-    </header>
+<!-- Área principal de apresentação do portfólio-->
+<main>
 
+    
     <section class="hero">
-
-        <div class="hero-text">
-
-            <span>Técnico de Informática</span>
+        <div class="hero-content">
+            <p class="tag">Técnico de Informática e Desenvolvedor</p>
 
             <h1>
-                Transformando<br>
-                problemas em<br>
-                soluções digitais
+                Victor Hugo<br>
+                Lucinger
             </h1>
 
-            <p>
-                Especialista em suporte corporativo, Servidores Windows, redes e desenvolvimento.
+            <p class="description">
+                Profissional de TI com conhecimentos em hardware, software,
+                redes, suporte técnico e desenvolvimento de soluções.
             </p>
 
             <div class="buttons">
-
-                <a href="#" class="btn">
-                    Ver Projetos
-                </a>
-
-                <a href="#" class="btn-outline">
-                    Download CV
-                </a>
-
+                <a href="#projetos" class="btn-primary">Ver Projetos</a>
+                <a href="assets/curriculo.pdf" class="btn-secondary" download>Download CV</a>
             </div>
 
+            <div class="info">
+                <span>Londrina - PR, Brasil</span>
+                <span>Disponível para oportunidades</span>
+            </div>
         </div>
+
+        <!-- Foto principal do portfólio -->
+        <div class="hero-image">
+            <img src="img/Victor Chapéu.png" alt="Foto de Victor Lucinger">
+        </div>
+    </section>
+
+    <section class="cards">
+
+        <!-- Card Sobre Mim -->
+        <article class="card" id="sobre">
+            <h2>Sobre mim</h2>
+            <p>
+                Sou Victor Hugo de Quadros Bezerra Lucinger, profissional de TI
+                com sólidos conhecimentos em hardware, software, manutenção de
+                computadores, suporte técnico e desenvolvimento de soluções.
+                Atualmente curso Técnico em Informática pelo Senac e sigo
+                aprimorando meus conhecimentos em Java, JavaScript, HTML,
+                CSS e Python.
+            </p>
+            <a href="#contato">Saiba mais →</a>
+        </article>
+
+        <!-- Card Formação Acadêmica -->
+        <article class="card" id="formacao">
+            <h2>Formação</h2>
+
+            <div class="timeline-item">
+                <h3>Engenharia de Software</h3>
+                <p>UniFil</p>
+                <span>2026 - Em andamento</span>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Técnico em Informática</h3>
+                <p>Senac</p>
+                <span>2025</span>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Formação Java</h3>
+                <p>Senac</p>
+                <span>2024</span>
+            </div>
+
+            <a href="#">Ver certificados →</a>
+        </article>
+
+        <!-- Card Experiência Profissional -->
+        <article class="card" id="experiencia">
+            <h2>Experiência</h2>
+
+            <div class="experience-item">
+                <h3>Técnico de Informática</h3>
+                <p><strong>JRB Prime</strong> • 2025 - Atual</p>
+                <span>
+                    Responsável pelo suporte técnico, diagnóstico e manutenção
+                    de equipamentos, monitoramento de redes, gerenciamento de
+                    firewall, segurança da informação e suporte à infraestrutura
+                    corporativa de TI.
+                </span>
+            </div>
+
+            <div class="experience-item">
+                <h3>Auxiliar de Almoxarifado</h3>
+                <p><strong>Fast Ariam</strong> • 2022 - 2023</p>
+                <span>
+                    Controle de estoque, entrada e saída de materiais,
+                    organização de inventário e acompanhamento de pedidos.
+                </span>
+            </div>
+
+            <a href="#contato">Ver mais experiências →</a>
+        </article>
+
+        <!-- Card Habilidades Técnicas -->
+        <article class="card habilidades">
+            <h2>Habilidades</h2>
+
+            <ul>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Python</li>
+                <li>Git / GitHub</li>
+                <li>Pacote Office</li>
+                <li>Pacote Adobe</li>
+                <li>Hardware</li>
+                <li>Software</li>
+                <li>Inglês Intermediário</li>
+                <li>Adaptável e Criativo</li>
+            </ul>
+        </article>
 
     </section>
 
+</main>
 
-    <p>Teste</p>
+<footer class="footer" id="contato">
+    <p>© 2024 Victor Lucinger. Todos os direitos reservados.</p>
+    <p>Ulalau sempre!</p>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
